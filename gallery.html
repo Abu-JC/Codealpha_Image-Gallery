@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean's Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+        <div class="logo">Jean's Gallery</div>
+        <div class="navigation">
+            <ul>
+                <li class="filter-btn active" data-filter="All">All Images</li>
+                <li class="filter-btn" data-filter="Nature">Nature</li>
+                <li class="filter-btn" data-filter="People">People</li>
+                <li class="filter-btn" data-filter="Cars">Cars</li>
+                <li class="filter-btn" data-filter="Designs">Designs</li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search gallery..." class="search-input">
+            </div>
+            <span class="material-symbols-outlined profile-btn">account_circle</span>
+        </div>
+        </nav>
+        <section class="hero">
+            <h1>Capture Every Moment</h1>
+            <p>Discover the finest digital art and high-quality photography within my gallery.</p>
+        </section>
+    </header>
+    <section class="gallery-grid">
+        <div class="gallery-item" data-category="Cars">
+            <img src="Img/2022 Lexus is 350 F SPORT.jpg" alt="Lexus">
+        </div>
+        <div class="gallery-item" data-category="Designs">
+            <img src="Img/esseence.jpg" alt="A poster advertising online design courses">
+        </div>
+        <div class="gallery-item" data-category="People">
+            <img src="Img/fathers day.jpg" alt="A happy Family">
+        </div>
+        <div class="gallery-item" data-category="Designs">
+            <img src="Img/Janets Kitchen.jpg" alt="A poster for a Restaurant Business">
+        </div>
+        <div class="gallery-item" data-category="People">
+            <img src="Img/Maasai Kid.jpg" alt="Maasai Child">
+        </div>
+        <div class="gallery-item" data-category="Nature">
+            <img src="Img/New to Gardening_ 7 Seasonal Planting Secrets You Need Now.jpg" alt="Planting">
+        </div>
+        <div class="gallery-item" data-category="Cars">
+            <img src="Img/🎖️ MERCEDES-BENZ E350 2025.jpg" alt="Mercedes Benz E-Class">
+        </div>
+        <div class="gallery-item" data-category="Designs">
+            <img src="Img/Quality Electronics 3.jpg" alt="Quality Tech">
+        </div>
+        <div class="gallery-item" data-category="Cars">
+            <img src="Img/Audi" alt="Audi">
+        </div>
+        <div class="gallery-item" data-category="Nature">
+            <img src="Img/🌊👑 Underwater Royalty.jpg" alt="Fish">
+        </div>
+        <div class="gallery-item" data-category="People">
+            <img src="Img/Happy Black Family" alt="Happy Family">
+        </div>
+        <div class="gallery-item" data-category="Nature">
+            <img src="Img/Panda" alt="Panda">
+        </div>
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Expanded View" class="lightbox-content" id="lightbox-img">
+    </div>
+    <script src="gallery.js"></script>
+</body>
+</html>
