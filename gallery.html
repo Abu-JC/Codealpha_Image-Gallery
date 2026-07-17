@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean's Image Gallery</title>
     <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="Img/Favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet">
 </head>
@@ -12,6 +13,7 @@
     <header class="header">
         <nav class="nav-bar">
         <div class="logo">Jean's Gallery</div>
+        <span class="material-symbols-outlined hamburger-menu">menu</span>
         <div class="navigation">
             <ul>
                 <li class="filter-btn active" data-filter="All">All Images</li>
@@ -74,6 +76,8 @@
     </section>
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&#10094</span>
+        <span class="lightbox-next">&#10095</span>
         <img src="" alt="Expanded View" class="lightbox-content" id="lightbox-img">
     </div>
     <script src="gallery.js"></script>
